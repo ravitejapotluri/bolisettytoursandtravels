@@ -1,0 +1,427 @@
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/html">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bolisetty Tours And Travels &mdash;</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by GetTemplates.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="GetTemplates.co" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="/assets/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="/assets/css/icomoon.css">
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="/assets/css/themify-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="/assets/css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="/assets/css/magnific-popup.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="/assets/css/bootstrap-datepicker.min.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="/assets/css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="/assets/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="/assets/js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="gtco-loader"></div>
+	
+	<div id="page">
+
+	
+	<!-- <div class="page-inner"> -->
+	<nav class="gtco-nav" role="navigation">
+		<div class="gtco-container">
+			
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+                    <div><a href="/"><h1 style="color: #B22222; font-size: 80px  ">Bolisetty </h1><h2 style="color: #7CFC00">Tours And Travels</h2></a></div>
+
+				</div>
+
+			</div>
+			
+		</div>
+	</nav>
+	
+	<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url(/assets/images/Bangkok.jpg)">
+		<div class="overlay"></div>
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0 text-left">
+					
+
+					<div class="row row-mt-15em">
+						<div class="col-md-8  mt-text animate-box" data-animate-effect="fadeInUp">
+							<h1>Planing Trip To Anywhere in The World?</h1>	
+						</div>
+						<div class="col-md-4  col-md-push-1 animate-box" data-animate-effect="fadeInRight">
+							<div class="form-wrap">
+								<div class="tab">
+									
+									<div class="tab-content">
+										<div class="tab-content-inner active" data-content="signup">
+											<h3>Enquire Your Trip</h3>
+											<form method="post" >
+                                                {% csrf_token %}
+												<div class="row form-group">
+													<div class="col-md-12">
+														<label for="fullname">Your Name</label>
+														<input type="text" id="name" name="name" class="form-control">
+													</div>
+                                                <div class="col-md-12">
+														<label for="email">Email</label>
+														<input type="email" name="email" id="email" class="form-control">
+													</div>
+                                                <div class="col-md-12">
+														<label for="number">Number</label>
+														<input type="number" name="number" id="number" class="form-control">
+													</div>
+												</div>
+
+												<div class="row form-group">
+													<div class="col-md-12">
+														<label for="destination">Destination</label>
+														<select name="destination" id="destination" class="form-control">
+															<option value="Domestic">Domestic</option>
+															<option value="USA">USA</option>
+															<option value="Australia">Australia</option>
+															<option value="Singapore">Singapore</option>
+														</select>
+													</div>
+												</div>
+												
+												<div class="row form-group">
+													<div class="col-md-12">
+														<label for="date-start">Date Travel</label>
+														<input type="text" name="date" id="date-start" class="form-control">
+													</div>
+												</div>
+{% if success %}
+                <script>alert('Successfully signed up')</script>
+        {% endif %}
+    {% if invalid %}
+        <script>alert('Invalid')</script>
+    {% endif %}
+												<div class="row form-group">
+													<div class="col-md-12">
+														<input type="submit" class="btn btn-primary btn-block" value="Submit">
+													</div>
+												</div>
+											</form>	
+										</div>
+
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+							
+					
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div class="gtco-section">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+					<h2>Bolisetty's Most Popular Destination</h2>
+					<p>“Oh Darling, Let’s Be Adventurers.”</p>
+				</div>
+			</div>
+            <div style="align: center">
+			<div class="row" >
+
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="/assets/images/plane.jpg" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="/assets/images/plane.jpg" alt="Image" class="img-responsive">
+						</figure>
+                    </a>
+						<div class="fh5co-text">
+							<h2>International Tours</h2>
+							<p>Book best International holiday packages at Bolisetty Tours, a leading tours and travel agency in India. We offer various travel and tour packages for family,Friends,Individuals..</p><br>
+							<a href="/international"> <p><span class="btn btn-primary">View</span></p></a>
+						</div>
+
+				</div>
+
+
+                <div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="/assets/images/travel1.jpg" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="/assets/images/travel1.jpg" alt="Image" class="img-responsive">
+						</figure>
+                    </a>
+						<div class="fh5co-text">
+							<h2>Domestic Tours</h2>
+							<p>Book best Domestic holiday packages at Bolisetty Tours, a leading tours and travel agency in India. We offer various travel and tour packages for family,Friends,Individuals..</p><br>
+							<a href="/domestic"><p><span class="btn btn-primary">View</span></p></a>
+						</div>
+
+				</div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="/assets/images/travel3.jpg" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="/assets/images/travel3.jpg" alt="Image" class="img-responsive">
+						</figure>
+                        </a>
+						<div class="fh5co-text">
+							<h2>Bolisetty's Special Tours</h2>
+							<p>Bolisetty Tours offers a special tours as per customer needs, a leading tours and travel agency in India. We offer various travel and tour packages for family,Friends,Individuals..</p><br>
+                            <a href="/special"> <p><span class="btn btn-primary">View</span></p></a>
+						</div>
+
+				</div>
+
+                <!--
+
+                <div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="/assets/images/singapore.jpg" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="/assets/images/singapore.jpg" alt="Image" class="img-responsive">
+						</figure>
+                     </a>
+						<div class="fh5co-text">
+							<h2>France</h2>
+							<p>France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches. Paris, its capital, is famed for its fashion houses, classical art museums including the Louvre and monuments like the Eiffel Tower. The country is also renowned for its wines and sophisticated cuisine...</p>
+							<p><span class="btn btn-primary">Schedule a Trip</span></p>
+						</div>
+
+				</div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="/assets/images/singapore.jpg" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="/assets/images/singapore.jpg" alt="Image" class="img-responsive">
+						</figure>
+                     </a>
+						<div class="fh5co-text">
+							<h2>Australia</h2>
+							<p>Australia is world famous for its natural wonders and wide open spaces, its beaches, deserts, "the bush", and "the Outback".
+
+Australia is one of the world's most highly urbanised countries; it is well known for the attractions of its large cities such as Sydney, Melbourne, Brisbane, and Perth..</p><br>
+							<p><span class="btn btn-primary">Schedule a Trip</span></p>
+						</div>
+
+				</div>
+
+                 <div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="/assets/images/singapore.jpg" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="/assets/images/singapore.jpg" alt="Image" class="img-responsive">
+						</figure>
+                     </a>
+						<div class="fh5co-text">
+							<h2>Dubai</h2>
+							<p>Dubai is a destination that mixes modern culture with history, adventure with world-class shopping and entertainment. Catch a show at the Dubai Opera, see downtown from atop the Burj Khalifa and spend an afternoon along Dubai Creek exploring the gold, textile and spice souks..</p><br>
+							<p><span class="btn btn-primary">Schedule a Trip</span></p>
+						</div>
+
+				</div>    -->
+
+			</div>
+                </div>
+		</div>
+	</div>
+	
+
+
+
+	<div class="gtco-cover gtco-cover-sm" style="background-image: url(images/img_bg_1.jpg)"  data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="gtco-container text-center">
+			<div class="display-t">
+				<div class="display-tc">
+					<h1>We have high quality services that you will surely love!</h1>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<div id="gtco-counter" class="gtco-section">
+		<div class="gtco-container">
+
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
+					<h2>Our Success</h2>
+					<p>Best Quality Food + High Standard Living Rooms + Best InClass Travel </p>
+				</div>
+			</div>
+
+			<div class="row">
+				
+				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+					<div class="feature-center">
+						<span class="counter js-counter" data-from="0" data-to="196" data-speed="5000" data-refresh-interval="50">1</span>
+						<span class="counter-label">Destination</span>
+
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+					<div class="feature-center">
+						<span class="counter js-counter" data-from="0" data-to="97" data-speed="5000" data-refresh-interval="50">1</span>
+						<span class="counter-label">Hotels</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+					<div class="feature-center">
+						<span class="counter js-counter" data-from="0" data-to="12402" data-speed="5000" data-refresh-interval="50">1</span>
+						<span class="counter-label">Travelers</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+					<div class="feature-center">
+						<span class="counter js-counter" data-from="0" data-to="12202" data-speed="5000" data-refresh-interval="50">1</span>
+						<span class="counter-label">Happy Customer</span>
+
+					</div>
+				</div>
+					
+			</div>
+		</div>
+	</div>
+
+	
+
+
+	<footer id="gtco-footer" role="contentinfo">
+		<div class="gtco-container">
+			<div class="row row-p	b-md">
+
+				<div class="col-md-4">
+					<div class="gtco-widget">
+						<h3>About Us</h3>
+						<p>Bolisetty Travel & Tours is a family-owned tour operator and travel agency located in Vijayawada, India.
+
+We specialize in tours to Domestic(India) but are always expanding and enhancing our wide range of offers, as well as adding new and exciting tours to International .
+
+A family-owned business based in Vijayawada, Bolisetty Tours And Travel was founded in 2000 by Bolisetty Rama Krishna  and since that humble beginning it has grown into a trusted resource that has helped tens of thousands of people better enjoy their travel.
+
+</p>
+					</div>
+				</div>
+
+
+
+
+
+				<div class="col-md-3 col-md-push-1">
+					<div class="gtco-widget">
+						<h3>Get In Touch</h3>
+						<ul class="gtco-quick-contact">
+
+                            <li><a><i class="icon-phone"></i> +91 9246400498</a></li>
+							<li><a><i class="icon-phone"></i> +91 9032219111</a></li>
+							<li><a><i class="icon-mail2"></i> tejasai7543@gmail.com</a></li>
+
+						</ul>
+					</div>
+				</div>
+
+                				<div class="col-md-3 col-md-push-1">
+					<div class="gtco-widget">
+						<h3>Address</h3>
+						<ul class="gtco-quick-contact">
+
+							<li>Gunadala Vantena</li>
+                            <li>Vijayawada-520004</li>
+                            <li>Krishna Distict</li>
+                            <li>Andhra Pradesh</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row copyright">
+				<div class="col-md-12">
+					<p class="pull-left">
+						<small class="block">&copy; 2019 All Rights Reserved.</small>
+						<small class="block">Bolisetty Tours And Travels <br>Design by <a href="https://www.linkedin.com/in/raviteja-potluri-504987166/" target="_blank">RaviTeja Potluri</small>
+					</p>
+
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	<!-- </div> -->
+
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="/assets/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="/assets/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="/assets/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="/assets/js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="/assets/js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="/assets/js/jquery.countTo.js"></script>
+
+	<!-- Stellar Parallax -->
+	<script src="/assets/js/jquery.stellar.min.js"></script>
+
+	<!-- Magnific Popup -->
+	<script src="/assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="/assets/js/magnific-popup-options.js"></script>
+	
+	<!-- Datepicker -->
+	<script src="/assets/js/bootstrap-datepicker.min.js"></script>
+	
+
+	<!-- Main -->
+	<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>
+

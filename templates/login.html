@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="zxx">
+
+<head>
+	<title>Bolisetty Login</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Bolisetty Login"
+	/>
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- Meta tag Keywords -->
+
+	<!-- css files -->
+	<link rel="stylesheet" href="/assets/css/stylelogin.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link rel="stylesheet" href="/assets/css/fontawesome-all.css">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Tangerine:400,700" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+	<!-- //web-fonts -->
+</head>
+
+<body>
+	<!-- title -->
+	<h1>
+		<span>B</span>olisetty
+		<span>L</span>ogin
+	
+	</h1>
+	<!-- //title -->
+
+	<!-- content -->
+	<div class="sub-main-w3">
+		<form class="login"  method="post">
+            {% csrf_token %}
+			<fieldset>
+				<p class="legend">Login Here<i class="far fa-hand-point-down"></i></p>
+				<div class="input">
+					<input type="email" placeholder="Email" name="email" required />
+					<span>
+						<i class="fas fa-envelope"></i>
+					</span>
+				</div>
+				<div class="input">
+					<input type="password" placeholder="Password" name="password" required />
+					<span>
+						<i class="fas fa-lock-open"></i>
+					</span>
+				</div>
+				<button type="submit" class="submit">
+					<i class="fas fa-sign-in-alt"></i>
+				</button>
+                {% if success %}
+                <script>alert('Successfully signed up')</script>
+                {% endif %}
+                {% if invalidusername %}
+                 <script>alert('Invalid username')</script>
+                {% endif %}
+                {% if invalidpassword %}
+                 <script>alert('Invalid Password')</script>
+                {% endif %}
+			</fieldset>
+
+		</form>
+	</div>
+	<!-- //content -->
+
+	<!-- copyright -->
+	<div class="footer">
+		<h2>&copy; 2018 Bolisetty Tours And Travels. All rights reserved | Design by
+			<a href="/">RaviTeja.Potluri</a>
+		</h2>
+	</div>
+	<!-- //copyright -->
+
+
+	<!-- Jquery -->
+	<script src="/assets/js/jquery-2.2.3.min.js"></script>
+	<!-- //Jquery -->
+
+</body>
+
+</html>
